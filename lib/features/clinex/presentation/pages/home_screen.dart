@@ -1,7 +1,6 @@
 import 'package:clinex/core/constants/app_colors.dart';
 import 'package:clinex/features/clinex/presentation/pages/all_doctor_screen.dart';
 import 'package:clinex/features/clinex/presentation/pages/dashboard/dashboard.dart';
-import 'package:clinex/features/clinex/presentation/pages/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -17,6 +16,7 @@ class HomeScreen extends StatelessWidget {
             () => NavigationBar(
               backgroundColor: Colors.white,
           height: 80,
+          indicatorColor: primaryColor.withOpacity(0.2),
           elevation: 0,
           selectedIndex: controller.selectedIndex.value,
           onDestinationSelected: (index) =>
@@ -41,8 +41,8 @@ class HomeNavigationController extends GetxController {
   final screens = [
     const Dashboard(),
     const DoctorTabBar(),
-   Container(color: primaryColor.withOpacity(0.7),),
-   Container(color: primaryColor.withOpacity(0.8),)
+    Container(color: primaryColor.withOpacity(0.7),),
+    Container(color: primaryColor.withOpacity(0.8),)
   ];
 
   // Function to navigate to a specific index

@@ -1,10 +1,5 @@
-
-
 import 'dart:convert';
-
 import 'package:flutter/services.dart';
-
-import '../../../../core/utils/json_loader.dart';
 
 class DoctorLocalDataSource {
   Future<List<Map<String, dynamic>>> fetchDoctors(String path) async {
