@@ -1,6 +1,8 @@
 import 'package:clinex/core/constants/app_colors.dart';
 import 'package:clinex/features/clinex/presentation/pages/dashboard/dashboard.dart';
+import 'package:clinex/features/clinex/presentation/pages/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:pinput/pinput.dart';
 
 class OTPVerificationPage extends StatelessWidget {
@@ -92,7 +94,7 @@ class OTPVerificationPage extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (builder) => Dashboard()));
+                   Get.offAll(() => const HomeScreen());
                   },
                   child: Text(
                     "Verify",

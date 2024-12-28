@@ -1,3 +1,4 @@
+import 'package:clinex/features/clinex/presentation/pages/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/login_header.dart';
@@ -23,6 +24,9 @@ class LoginScreen extends StatelessWidget {
 
               /// Form
               MyLoginForm(),
+
+              SizedBox(height: 24,),
+
 
 
 

@@ -12,18 +12,13 @@ class DoctorDetailScreen extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
       return Scaffold(
-        floatingActionButton: Padding(
-          padding: const EdgeInsets.only(left: 30),
-          child: SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 18),
+        floatingActionButton: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 18),
+            elevation: 12
 
-              ),
-                onPressed: (){}, child: const Text('Book Appointment')),
           ),
-        ),
+            onPressed: (){}, child: const Text('🩺  Book Appointment')),
         body: Stack(
           children : [ SingleChildScrollView(
             child: Column(
@@ -35,7 +30,7 @@ class DoctorDetailScreen extends StatelessWidget {
                       Image.asset(
                         height: 300,
                         width: double.infinity,
-                        fit: BoxFit.fill,
+                        fit: BoxFit.cover,
                         doctor.profilePicture
                       ),
                       Positioned(
@@ -97,7 +92,8 @@ class DoctorDetailScreen extends StatelessWidget {
                       const SizedBox(height: 24,),
                       const MySectionHeading(title: 'About',showActionButton: false,),
                       const Divider(),
-                      const Text('Description'),
+                      SizedBox(height: 6,),
+                      Text('Expert in ${doctor.specialization}, committed to offering high-quality care with a focus on patient well-being."'),
                     ],
                   ),
                 )
