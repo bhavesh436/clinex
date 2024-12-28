@@ -42,7 +42,7 @@ class HomeNavigationController extends GetxController {
   final screens = [
     const Dashboard(),
     const DoctorTabBar(),
-    Container(color: primaryColor.withOpacity(0.9),),
+    Container(color: primaryColor.withOpacity(0.9),child: Center(child: Text('Under Development',style: TextStyle(fontSize: 21,fontWeight: FontWeight.bold,color: Colors.white),)),),
     const ProfileScreen()
   ];
 

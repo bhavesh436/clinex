@@ -49,7 +49,13 @@ class DoctorDetailScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(doctor.name,style: Theme.of(context).textTheme.titleLarge!.apply(fontWeightDelta: 1),),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(doctor.name,style: Theme.of(context).textTheme.titleLarge!.apply(fontWeightDelta: 1),),
+                          const Icon(Iconsax.share),
+                        ],
+                      ),
                       const SizedBox(height: 8,),
                       Text(doctor.specialization  ,style: Theme.of(context).textTheme.bodyLarge!.apply(fontWeightDelta: 1,color: Colors.grey),),
                       const SizedBox(height: 16,),
