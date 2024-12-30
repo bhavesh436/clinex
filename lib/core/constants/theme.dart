@@ -7,7 +7,7 @@ class MyAppTheme {
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     brightness: Brightness.light,
-    primaryColor: Colors.blueAccent,
+    primaryColor: primaryColor,
     scaffoldBackgroundColor: Colors.white,
     textTheme: MyTextTheme.lightTextTheme,
     elevatedButtonTheme: MyElevatedButtonTheme.lightElevatedButtonTheme,
@@ -19,7 +19,7 @@ class MyAppTheme {
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     brightness: Brightness.dark,
-    primaryColor: Colors.blueAccent,
+    primaryColor: primaryColor,
     scaffoldBackgroundColor: Colors.black,
     textTheme: MyTextTheme.darkTextTheme,
     elevatedButtonTheme: MyElevatedButtonTheme.darkElevatedButtonTheme,

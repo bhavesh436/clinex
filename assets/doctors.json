@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Dr. John Smith",
         "specialization": "Cardiologist",
-        "profile_picture": "assets/images/doctor1.jpg",
+        "profile_picture": "assets/images/doctor1.webp",
         "rating": 4.5
     },
 
@@ -11,7 +11,7 @@
         "id": 2,
         "name": "Dr. Jane Doe",
         "specialization": "Dermatologist",
-        "profile_picture": "assets/images/doctor2.jpg",
+        "profile_picture": "assets/images/doctor2.webp",
         "rating": 4.7
     },
 
@@ -19,7 +19,7 @@
         "id": 3,
         "name": "Dr. Mane Manus",
         "specialization": "Dermatologist",
-        "profile_picture": "assets/images/doctor3.jpg",
+        "profile_picture": "assets/images/doctor3.webp",
         "rating": 4.9
     },
 
@@ -27,7 +27,7 @@
         "id": 4,
         "name": "Dr. Abraham Benjamin De Villiers",
         "specialization": "Neurologist",
-        "profile_picture": "assets/images/doctor5.jpg",
+        "profile_picture": "assets/images/doctor5.webp",
         "rating": 999
     },
 
@@ -35,7 +35,7 @@
         "id": 5,
         "name": "Dr. Somerset Williams",
         "specialization": "Dentist",
-        "profile_picture": "assets/images/doctor4.jpg",
+        "profile_picture": "assets/images/doctor4.webp",
         "rating": 5.0
     }
 ]
